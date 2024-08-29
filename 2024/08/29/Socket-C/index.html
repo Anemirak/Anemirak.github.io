@@ -19,25 +19,21 @@
   <meta name="author" content="Hang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="OpenWrt路由器OpenWrt 项目是一个针对嵌入式设备的 Linux 操作系统，提供了具有软件包管理功能的完全可写的文件系统通过使用适配任何应用的软件包来定制设备。 文件系统布局  &#x2F;etc: 这个目录包含了大部分的配置文件。具体配置文件包括：&#x2F;etc&#x2F;config&#x2F;：包含主要的配置文件，例如网络配置 (network)、无线设置 (wireless)">
-<meta property="og:type" content="article">
-<meta property="og:title" content="OpenWrt">
-<meta property="og:url" content="http://example.com/2024/08/28/OpenWrt/index.html">
+    <meta property="og:type" content="article">
+<meta property="og:title" content="Socket_C">
+<meta property="og:url" content="http://example.com/2024/08/29/Socket-C/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="OpenWrt路由器OpenWrt 项目是一个针对嵌入式设备的 Linux 操作系统，提供了具有软件包管理功能的完全可写的文件系统通过使用适配任何应用的软件包来定制设备。 文件系统布局  &#x2F;etc: 这个目录包含了大部分的配置文件。具体配置文件包括：&#x2F;etc&#x2F;config&#x2F;：包含主要的配置文件，例如网络配置 (network)、无线设置 (wireless)">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/291.png">
-<meta property="article:published_time" content="2024-08-28T08:45:44.000Z">
-<meta property="article:modified_time" content="2024-08-29T02:21:11.027Z">
+<meta property="article:published_time" content="2024-08-29T02:26:17.000Z">
+<meta property="article:modified_time" content="2024-08-29T02:27:50.733Z">
 <meta property="article:author" content="Hang">
-<meta property="article:tag" content="Linux">
-<meta property="article:tag" content="网络项目">
+<meta property="article:tag" content="C">
+<meta property="article:tag" content="Socket">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/291.png">
   
   
   
-  <title>OpenWrt - Hexo</title>
+  <title>Socket_C - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="OpenWrt"></span>
+            <span id="subtitle" data-typed-text="Socket_C"></span>
           
         </div>
 
@@ -214,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-08-28 16:45" pubdate>
-          2024年8月28日 下午
+        <time datetime="2024-08-29 10:26" pubdate>
+          2024年8月29日 上午
         </time>
       </span>
     
@@ -226,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          704 字
+          0 字
         
       </span>
     
@@ -237,7 +233,7 @@
         
         
         
-          6 分钟
+          1 分钟
         
       </span>
     
@@ -274,22 +270,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">OpenWrt</h1>
+            <h1 id="seo-header">Socket_C</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="OpenWrt路由器"><a href="#OpenWrt路由器" class="headerlink" title="OpenWrt路由器"></a>OpenWrt路由器</h1><p>OpenWrt 项目是一个针对嵌入式设备的 Linux 操作系统，提供了具有软件包管理功能的完全可写的文件系统通过使用适配任何应用的软件包来定制设备。</p>
-<h5 id="文件系统布局"><a href="#文件系统布局" class="headerlink" title="文件系统布局"></a>文件系统布局</h5><p><img src="/img/291.png" srcset="/img/loading.gif" lazyload alt="图片"> </p>
-<p>&#x2F;etc: 这个目录包含了大部分的配置文件。具体配置文件包括：<br>&#x2F;etc&#x2F;config&#x2F;：包含主要的配置文件，例如网络配置 (network)、无线设置 (wireless)、防火墙设置 (firewall) 等。</p>
-<p>&#x2F;etc&#x2F;config&#x2F;network: 配置网络接口和网络设置。可以在这里设置静态 IP、DHCP 客户端、桥接等。<br>&#x2F;etc&#x2F;config&#x2F;wireless: 配置无线网络接口，包括 SSID、加密类型、无线模式等。<br>&#x2F;etc&#x2F;config&#x2F;firewall: 配置防火墙规则，包括 NAT 和过滤规则。<br>&#x2F;etc&#x2F;config&#x2F;system: 系统设置，包括主机名、时区和其他系统级别的配置。<br>&#x2F;etc&#x2F;config&#x2F;dhcp: 配置 DHCP 服务器和 DHCP 选项。</p>
-<p>&#x2F;etc&#x2F;init.d&#x2F;：包含系统服务的启动脚本，可以用来启动、停止和重启服务。</p>
-<p>&#x2F;lib: 包含了系统库和脚本</p>
-<h5 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h5><figure class="highlight plaintext"><figcaption><span>wifi所有的配置文件  qcawificfg80211.sh</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><code class="hljs lib/wifi/">/etc/config 配置文件<br><br>vi /ect/config/wireless<br><br>/etc/config/dhcp    //网络服务配置<br><br>/etc/config/network   //网络接口配置<br><br>/etc/config/firewall    //防火墙配置<br><br>cat /etc/config/network  //查看配置<br><br>uci show network  //uci配置查看命令<br><br>uci set network.lan.proto=dhcp  //配置动态获取<br><br>uci set network.lan.proto=&#x27;static&#x27;  //配置静态IP<br><br>uci set network.lan.ipaddr=&#x27;192.168.10.100&#x27;  //设置LAN口的IP地址<br><br>uci set network.lan.netmask=&#x27;255.255.255.0&#x27; //设置LAN口的子网掩码<br><br>uci set network.lan.gateway=&#x27;192.168.10.1&#x27;  //设置LAN口的网关地址<br><br>uci set network.lan.dns=&#x27;8.8.8.8&#x27; //设置DNS服务器地址<br><br>uci set network.lan.dns=&#x27;8.8.8.8 8.8.4.4&#x27;   //多个DNS服务器<br><br>uci commit network  //保存修改后的配置<br><br>/etc/init.d/network restart  //重启网络<br><br>brctl show  //查看桥<br><br>hotplug热插拔<br><br>/etc/hotplug.d/button<br><br>vim 51-wps-reset   //长按wps键输出“自定义语句”，松开后重启<br><br>ubus list  显示所有的注册的服务<br><br>ubus -v list 显示更详细的信息<br><br>ubus -v list network.device：显示某个服务注册的功能<br><br>ps |grep lighttp<br><br>vi /etc/lighttpd/lighttpd.conf<br><br>ps |grep uhttp<br><br>/etc/init.d/lighttpd restart<br><br>/etc/init.d/uhttpd restart<br><br>ethtool eth0 //查看接口的工作协议（全双工、半双工） <br><br></code></pre></td></tr></table></figure>
-
-<h5 id="创建和维护自定义-OpenWrt-软件包，编写-Makefile-和配置文件"><a href="#创建和维护自定义-OpenWrt-软件包，编写-Makefile-和配置文件" class="headerlink" title="创建和维护自定义 OpenWrt 软件包，编写 Makefile 和配置文件"></a>创建和维护自定义 OpenWrt 软件包，编写 Makefile 和配置文件</h5><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">mkdir package/helloworld<br><span class="hljs-keyword">cd</span> package/helloworld/<br>mkdir src<br><span class="hljs-keyword">cd</span> src/<br>vim helloworld.c  <span class="hljs-string">//</span>编写C程序<br>vim makefile  <span class="hljs-string">//</span>编写编译指令，将C源程序编译为可执行文件<br><span class="hljs-keyword">cd</span> <span class="hljs-string">../</span><br>vim Makefile  <span class="hljs-string">//</span>编写主Makefile，编译和安装软件包<br>make menuconfig  <span class="hljs-string">//</span>选择软件包helloworld 并标记为编译<br>make <span class="hljs-string">./package/helloworld/</span>&#123;clean,prepare,compile&#125; V=s  <span class="hljs-string">//</span>编译软件包<br>bin/ipq/<span class="hljs-string">./packages/base/helloworld_1.0-1_ipq.ipk</span>   <span class="hljs-string">//</span>打包成<span class="hljs-string">.ipk</span>文件并安装到OpenWrt系统<br><br>在板子上: <br><span class="hljs-keyword">cd</span> <span class="hljs-string">/tmp/</span><br>tftp -g -r helloworld_1.0-1_ipq.ipk x.x.x.x   <span class="hljs-string">//tftp</span>传输<br>opkg install helloworld_1.0-1_ipq.ipk  <span class="hljs-string">//</span>通过opkg安装<br>helloworld  <span class="hljs-string">//</span>运行程序<br></code></pre></td></tr></table></figure>
-
-
+                
                 
               </div>
             
@@ -297,41 +283,13 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Linux/" class="category-chain-item">Linux</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Linux/OpenWrt/" class="category-chain-item">OpenWrt</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Linux/" class="print-no-link">#Linux</a>
+        <a href="/tags/C/" class="print-no-link">#C</a>
       
-        <a href="/tags/%E7%BD%91%E7%BB%9C%E9%A1%B9%E7%9B%AE/" class="print-no-link">#网络项目</a>
+        <a href="/tags/Socket/" class="print-no-link">#Socket</a>
       
     </div>
   
@@ -343,8 +301,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>OpenWrt</div>
-      <div>http://example.com/2024/08/28/OpenWrt/</div>
+      <div>Socket_C</div>
+      <div>http://example.com/2024/08/29/Socket-C/</div>
     </div>
     <div class="license-meta">
       
@@ -356,7 +314,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年8月28日</div>
+          <div>2024年8月29日</div>
         </div>
       
       
@@ -388,18 +346,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/08/29/Socket-C/" title="Socket_C">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Socket_C</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/08/27/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2024/08/28/OpenWrt/" title="OpenWrt">
+                        <span class="hidden-mobile">OpenWrt</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

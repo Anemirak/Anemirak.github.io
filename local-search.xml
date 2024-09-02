@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>C++特性</title>
+    <link href="/2024/09/02/C++-%E7%89%B9%E6%80%A7/"/>
+    <url>/2024/09/02/C++-%E7%89%B9%E6%80%A7/</url>
+    
+    <content type="html"><![CDATA[<h1 id="面向对象编程三大特性"><a href="#面向对象编程三大特性" class="headerlink" title="面向对象编程三大特性"></a>面向对象编程三大特性</h1><p><strong>封装</strong>  隐藏对象的属性和实现细节，仅对外提供公共接口。即将数据（属性）和操作这些数据的方法（函数）封装在一起，外界只能通过预定义的接口与之交互，无需知道内部的具体实现。这样做能隐藏细节，减少错误，增强模块间的独立性。<br><strong>继承</strong>  子类继承父类的属性和方法，并能添加新的属性和方法或重写父类的方法。允许创建一个新的类（派生类），继承自己存在的类（基类），从而继承其属性和方法，并可以添加或修改自己的新特性，有助于代码的复用与扩展。<br><strong>多态</strong>  允许一个接口被多种数据类型实现，或者说一个接口可以有多种不同的实现方法。指的是允许使用一个接口以表示不同类型的对象，从而使得代码在处理不同对象时具有通用性。多态分为编译时多态（重载）和运行时多态（重写&#x2F;虚函数）</p><h1 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h1><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs actionscript"><span class="hljs-keyword">class</span> 类名&#123;<br>    <span class="hljs-keyword">public</span>：  <span class="hljs-comment">//可以从类的外部直接访问</span><br>        <span class="hljs-comment">//公有数据成员； </span><br>        <span class="hljs-comment">//公有成员函数；</span><br>    <span class="hljs-keyword">protected</span>:   <span class="hljs-comment">//在类内部和派生类可以访问，类的外部无法直接访问，实现继承关系的共享功能</span><br>        <span class="hljs-comment">//保护数据成员；</span><br>        <span class="hljs-comment">//保护成员函数；</span><br>    <span class="hljs-keyword">private</span>:       <span class="hljs-comment">//只能在类内部访问，外部代码无法直接访问</span><br>        <span class="hljs-comment">//私有数据成员；</span><br>        <span class="hljs-comment">//私有成员函数；</span><br>&#125;;<span class="hljs-comment">//不能在类声明中给数据成员赋初值。</span><br></code></pre></td></tr></table></figure><p><strong>类的默认成员函数</strong><br>构造函数     初始化对象<br>析构函数     清理<br>拷贝构造     使用同类对象初始化创建对象<br>赋值重载      把一个对象赋值给另一个对象<br>取地址重载   普通对象和const对象取地址</p><p><strong>静态成员数据</strong>，在类定义中声明，必须在类外部定义和初始化。推荐使用类名访问。<br>静态成员数据的生命周期与程序的生命周期相同。<br>通过类的成员函数来访问和修改。<br>初始化发生在程序启动时，早于对象的构造。</p><h1 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h1><ul><li><strong>深拷贝</strong>：不仅拷贝指针，对指针指向的内容进行拷贝，深拷贝后两个指针指向两个不同的地址。</li><li><strong>浅拷贝</strong>：只是对指针的拷贝，拷贝后两个指针指向同一个内存空间。</li><li>写实拷贝：内核只为新生成的子进程创建虚拟空间结构，它们来复制于父进程的虚拟地址结构，但是不为这段分配物理内存，它们共享父进程的物理空间，当父进程中有更改相应段的行为发生时，再为子进程相应的段分配物理空间。</li></ul><p>类的生命周期：加载、验证、准备、解析、初始化、使用、卸载（验证、准备、解析统称为链接）</p><p>空类的大小是1字节</p><p>new 分配内存，调用对象的构造内存<br>delete 释放内存，调用对象的析构函数<br>new和delete 自动计算所需内存大小</p><p>explicit  用于阻止类或结构体中的构造函数进行隐式类型转换</p><p><strong>继承</strong><br>构造函数、析构函数、赋值运算符不能继承</p><p>构造时，先调用基类的构造函数，再调用派生类的构造函数<br>析构时，先调用派生类的析构函数，再调用基类的析构函数</p><p><strong>多态</strong><br>编译时多态，通过函数重载和模板实现<br>运行时多态，通过虚函数实现</p><p><strong>重载</strong>overload，将语义相近的几个函数用同一个名字表示，但是参数列表（参数的类型，个数，顺序不同）不同，这就是函数重载，返回值类型可以不同</p><p>特征：相同范围（同一个类中）、函数名字相同、参数不同、virtual关键字可有可无</p><p><strong>重定义</strong>override，派生类屏蔽了其同名的基类函数，返回值类型可以不同</p><p>特征：不同范围（基类和派生类）、函数名字相同、参数不同或者参数相同且无virtual关键字</p><p><strong>重写</strong>overwrite，派生类覆盖基类的虚函数，实现接口的重用，返回值类型必须相同</p><p>特征：不同范围（基类和派生类）、函数名字相同、参数相同、基类中必须有virtual关键字（必须是虚函数）</p><p><strong>作用域</strong><br>全局、局部、类、语句、命名空间、文件作用域</p><p><strong>右值引用</strong><br>一种特殊的引用类型，专门用来绑定到右值。右值通常指的是那些临时的对象或者是那些不具有名称的对象，例如函数返回值、字面量常量、临时对象等。<br>声明右值引用在类型后加&amp;&amp;，例如 int&amp;&amp; data;<br>右值引用只能绑定右值，不能绑定左值<br>右值引用主要用来支持移动语义和完美转发</p><p><strong>移动语义</strong><br>允许编译器在某些情况下选择移动资源而非复制资源，从而提高程序的性能<br>涉及移动构造函数和移动赋值运算符</p><ul><li><strong>移动构造函数</strong>：用于从一个右值构造一个新的对象，通常会将资源从一个对象移动到另一个对象。</li><li><strong>移动赋值运算符</strong>：用于将一个右值对象的状态移动到一个已存在的对象中，通常会释放已有资源并获取新资源。</li></ul><p><strong>const和define的区别</strong></p><ol><li>const生效于编译的阶段；define生效于预处理阶段。</li><li>const定义的常量，在C语言中是存储在内存中、需要额外的内存空间的；define定义的常量，运行时是直接的操作数，并不会存放在内存中。</li><li>const定义的常量是带类型的；define定义的常量不带类型。因此define定义的常量不利于类型检查。</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>C++</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>C++ 面向对象</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>链表_C</title>
     <link href="/2024/08/31/%E9%93%BE%E8%A1%A8-C/"/>
     <url>/2024/08/31/%E9%93%BE%E8%A1%A8-C/</url>

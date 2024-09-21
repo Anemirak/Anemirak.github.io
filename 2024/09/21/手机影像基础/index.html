@@ -19,22 +19,22 @@
   <meta name="author" content="Hang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="CMakeCMake 是一个跨平台的构建系统生成器，它可以生成各种构建工具所需的文件，如 Makefile、Ninja、Visual Studio 解决方案等。CMake 使用 CMakeLists.txt 文件来描述项目的构建规则。 项目结构如下 1234567&#x2F;path&#x2F;to&#x2F;your&#x2F;project&#x2F;├── CMakeLists.txt├── build   &#x2F;&#x2F;在此目录下运行cmake .">
+    <meta name="description" content="一、手机影像主要参数1、分辨率分辨率指图像的像素数量，较高的分辨率可以提供更多的细节和清晰度。 分辨率的单位：描述分辨率的单位有dpi（点每英寸）、lpi（线每英寸）、ppi（像素每英寸）和PPD（Pixels Per Degree 角分辨率，像素每度）。但只有lpi是描述光学分辨率的尺度的。dpi是指打印分辨率（每英寸所能打印的点数，即打印精度），ppi是图像的采样率（在图像中，每英寸所包含的像">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CMake">
-<meta property="og:url" content="http://example.com/2024/09/04/CMake/index.html">
+<meta property="og:title" content="手机影像基础">
+<meta property="og:url" content="http://example.com/2024/09/21/%E6%89%8B%E6%9C%BA%E5%BD%B1%E5%83%8F%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="CMakeCMake 是一个跨平台的构建系统生成器，它可以生成各种构建工具所需的文件，如 Makefile、Ninja、Visual Studio 解决方案等。CMake 使用 CMakeLists.txt 文件来描述项目的构建规则。 项目结构如下 1234567&#x2F;path&#x2F;to&#x2F;your&#x2F;project&#x2F;├── CMakeLists.txt├── build   &#x2F;&#x2F;在此目录下运行cmake .">
+<meta property="og:description" content="一、手机影像主要参数1、分辨率分辨率指图像的像素数量，较高的分辨率可以提供更多的细节和清晰度。 分辨率的单位：描述分辨率的单位有dpi（点每英寸）、lpi（线每英寸）、ppi（像素每英寸）和PPD（Pixels Per Degree 角分辨率，像素每度）。但只有lpi是描述光学分辨率的尺度的。dpi是指打印分辨率（每英寸所能打印的点数，即打印精度），ppi是图像的采样率（在图像中，每英寸所包含的像">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-09-04T03:52:18.000Z">
-<meta property="article:modified_time" content="2024-09-04T04:09:50.760Z">
+<meta property="article:published_time" content="2024-09-21T10:00:22.000Z">
+<meta property="article:modified_time" content="2024-09-21T14:00:42.432Z">
 <meta property="article:author" content="Hang">
-<meta property="article:tag" content="Linux 构建工具">
+<meta property="article:tag" content="Camera">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>CMake - Hexo</title>
+  <title>手机影像基础 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -200,7 +200,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="CMake"></span>
+            <span id="subtitle" data-typed-text="手机影像基础"></span>
           
         </div>
 
@@ -211,8 +211,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-09-04 11:52" pubdate>
-          2024年9月4日 中午
+        <time datetime="2024-09-21 18:00" pubdate>
+          2024年9月21日 晚上
         </time>
       </span>
     
@@ -223,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          159 字
+          1.8k 字
         
       </span>
     
@@ -234,7 +234,7 @@
         
         
         
-          2 分钟
+          15 分钟
         
       </span>
     
@@ -271,27 +271,41 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">CMake</h1>
+            <h1 id="seo-header">手机影像基础</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="CMake"><a href="#CMake" class="headerlink" title="CMake"></a>CMake</h1><p><strong>CMake</strong> 是一个跨平台的构建系统生成器，它可以生成各种构建工具所需的文件，如 Makefile、Ninja、Visual Studio 解决方案等。CMake 使用 <code>CMakeLists.txt</code> 文件来描述项目的构建规则。</p>
-<p>项目结构如下</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs stylus">/path/to/your/project/<br>├── CMakeLists<span class="hljs-selector-class">.txt</span><br>├── build   <span class="hljs-comment">//在此目录下运行cmake ..生成构建文件</span><br>├── <span class="hljs-selector-tag">main</span><span class="hljs-selector-class">.h</span><br>├── <span class="hljs-selector-tag">main</span><span class="hljs-selector-class">.c</span><br>├── hello<span class="hljs-selector-class">.c</span><br>└── world.c<br></code></pre></td></tr></table></figure>
-
-<p>CMakeLists.txt的内容如下</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">cmake_minimum_required</span><span class="hljs-params">(VERSION <span class="hljs-number">3.5</span>)</span></span>  <span class="hljs-comment">//指定最低版本要求</span><br><br><span class="hljs-function"><span class="hljs-title">project</span><span class="hljs-params">(main)</span></span>  <span class="hljs-comment">//定义项目名称</span><br><br><span class="hljs-function"><span class="hljs-title">add_executable</span><span class="hljs-params">(main main.c hello.c world.c)</span></span> <span class="hljs-comment">//创建可执行文件并指定源文件</span><br></code></pre></td></tr></table></figure>
-
-<p>构建过程</p>
-<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli"><span class="hljs-string">//</span>运行cmake生成build文件<br>mkdir  build<br><span class="hljs-keyword">cd</span> build<br>cmake  . .<br><br><span class="hljs-string">//</span>编译项目<br>make<br><br>运行可执行文件<br><span class="hljs-string">./main</span><br></code></pre></td></tr></table></figure>
-
-
-
-
-
-
-
+                <h1 id="一、手机影像主要参数"><a href="#一、手机影像主要参数" class="headerlink" title="一、手机影像主要参数"></a>一、手机影像主要参数</h1><h2 id="1、分辨率"><a href="#1、分辨率" class="headerlink" title="1、分辨率"></a>1、分辨率</h2><p>分辨率指图像的像素数量，较高的分辨率可以提供更多的细节和清晰度。</p>
+<p>分辨率的单位：描述分辨率的单位有dpi（点每英寸）、lpi（线每英寸）、ppi（像素每英寸）和PPD（Pixels Per Degree 角分辨率，像素每度）。但只有lpi是描述光学分辨率的尺度的。dpi是指打印分辨率（每英寸所能打印的点数，即打印精度），ppi是图像的采样率（在图像中，每英寸所包含的像素数目）。</p>
+<p>分辨率的分类：显示器分辨率（显示器本身的物理分辨率）、屏幕或显示分辨率（屏幕图像的精密度）、图像分辨率（数字图像所具有的分辨率）。</p>
+<h2 id="2、对焦"><a href="#2、对焦" class="headerlink" title="2、对焦"></a>2、对焦</h2><p>对焦指相机将图像清晰聚焦的过程。自动对焦功能可自动调整焦点，确保主体清晰锐利。手动对焦功能允许用户手动选择焦点。</p>
+<h2 id="3、焦距"><a href="#3、焦距" class="headerlink" title="3、焦距"></a>3、焦距</h2><p>简单理解就是指镜头的视角和放大倍数。实际到物理设备，焦距就是从镜片光学中心到底片、CCD或CMOS等成像平面的距离。较短的焦距（广角）适用于拍摄广阔的场景，较长的焦距（长焦）适用于远距离拍摄或局部细节。</p>
+<p>焦距和视角的关系</p>
+<p>一般来说：焦距长度约为35 mm 的镜头称为标准镜头，因为其视角接近于人类的视野。焦距长度比35 mm 短的镜头称为广角镜头，拥有较长焦距长度的镜头则称为望远镜头。</p>
+<p>超广角镜头— 24mm以下</p>
+<p>广角镜头— 24-35mm</p>
+<p>标准镜头— 35-85mm</p>
+<p>远摄镜头— 85-300mm</p>
+<p>超远摄镜头— 300mm以上</p>
+<h2 id="4、白平衡"><a href="#4、白平衡" class="headerlink" title="4、白平衡"></a>4、白平衡</h2><p>白平衡，字面上的理解是白色的平衡。白平衡是描述显示器中红、绿、蓝三基色混合生成后白色精确度的一项指标。白平衡是电视摄像领域一个非常重要的概念，通过它可以解决色彩还原和色调处理的一系列问题。白平衡是随着电子影像再现色彩真实而产生的，在专业摄像领域白平衡应用的较早。家用电子产品（家用摄像机、数码照相机）中也广泛地使用，然而技术的发展使得白平衡调整变得越来越简单容易，但许多使用者还不甚了解白平衡的工作原理，理解上存在诸多误区。它是实现摄像机图像能精确反映被摄物的色彩状况，有手动白平衡和自动白平衡等方式。许多人在使用数码摄像机拍摄的时候都会遇到这样的问题：在日光灯的房间里拍摄的影像会显得发绿，在室内钨丝灯光下拍摄出来的景物就会偏黄，而在日光阴影处拍摄到的照片则莫名其妙地偏蓝，其原因就在于白平衡的设置上。</p>
+<h2 id="5、HDR"><a href="#5、HDR" class="headerlink" title="5、HDR"></a>5、HDR</h2><p>HDR，即High Dynamic Range，高动态范围。这个范围指的是图像的亮度范围，自然界的亮度范围很大，人眼可以轻易捕捉10000尼特的亮度信息，但是一般显示的图像（SDR，Standard Dynamic Range）往往亮处不够亮（1000尼特以上），暗处不够暗（0.01尼特以下），这样显示的细节就会大打折扣。HDR图像原理就是采用多张不同曝光的图像，进行像素融合，以达到既有高曝光下更多色彩，也有低曝光下更多暗部细节的效果。</p>
+<h2 id="6、快门"><a href="#6、快门" class="headerlink" title="6、快门"></a>6、快门</h2><p>快门越快，进光量越少；快门越慢，进光量越多。因为快门的单位是秒，所以快门数值1&#x2F;100、1&#x2F;50、1、30都是指的多少秒。</p>
+<h2 id="7、光圈"><a href="#7、光圈" class="headerlink" title="7、光圈"></a>7、光圈</h2><p>光圈越大，进光量越多；光圈越小，进光量越少。相机上看到的fXX这个值就是指光圈值，它是由一系列复杂的光学算法算出来的，f后面的值越小，代表光圈越大。例如，f1.2的圈就比f8的圈大。</p>
+<h2 id="8、感光度ISO"><a href="#8、感光度ISO" class="headerlink" title="8、感光度ISO"></a>8、感光度ISO</h2><p>感光度值越高，对光线越敏感；感光度值越低，对光线越不敏感。感光度这个概念来自胶片时代，不同类型的胶片对光线的敏感程度不一样，因此在数码时代沿用了这个做法。感光度提升光线敏感度是以画质为代价的，所以一般默认拍照感光度都是最低。</p>
+<h1 id="二、手机影像的3A"><a href="#二、手机影像的3A" class="headerlink" title="二、手机影像的3A"></a>二、手机影像的3A</h1><p>手机影像中，”3A”代表<strong>自动对焦（Auto Focus）</strong>、<strong>自动曝光（Auto Exposure）</strong>和<strong>自动白平衡（Auto White Balance）</strong></p>
+<h2 id="1、自动对焦（Auto-Focus）"><a href="#1、自动对焦（Auto-Focus）" class="headerlink" title="1、自动对焦（Auto Focus）"></a>1、自动对焦（Auto Focus）</h2><p>手机摄像头通过使用不同的对焦技术（如对比度对焦、相位对焦等）来自动调整焦点，确保拍摄的主体清晰锐利。</p>
+<h2 id="2、自动曝光（Auto-Exposure）"><a href="#2、自动曝光（Auto-Exposure）" class="headerlink" title="2、自动曝光（Auto Exposure）"></a>2、自动曝光（Auto Exposure）</h2><p>手机摄像头通过测量场景的光线强度，自动调整曝光参数，以获得合适的亮度和对比度，确保图像明亮而不过曝或欠曝。</p>
+<h2 id="3、自动白平衡（Auto-White-Balance）"><a href="#3、自动白平衡（Auto-White-Balance）" class="headerlink" title="3、自动白平衡（Auto White Balance）"></a>3、自动白平衡（Auto White Balance）</h2><p>手机摄像头通过分析场景中的颜色温度，自动调整白平衡参数，以消除图像中的色偏，使得白色看起来真实而不偏色。</p>
+<h1 id="三、镜头上最重要的两个参数"><a href="#三、镜头上最重要的两个参数" class="headerlink" title="三、镜头上最重要的两个参数"></a>三、镜头上最重要的两个参数</h1><h2 id="1、焦距"><a href="#1、焦距" class="headerlink" title="1、焦距"></a>1、焦距</h2><p>焦距一般是以mm为单位（有的镜头非要以cm为单位）的一个数字。</p>
+<p>这个数字越小，我们说焦距越短，视野越大，取景范围越广。</p>
+<p>这个数字越大，我们说焦距越长，视野越窄，取景范围越小。但是能把远处景物拉近。</p>
+<p>所以拍大场景的，一般我们用短焦距，拍远处的，我们用长焦距。</p>
+<h2 id="2、最大光圈"><a href="#2、最大光圈" class="headerlink" title="2、最大光圈"></a>2、最大光圈</h2><p>一支镜头的参数上，标注着最大光圈是多少。对于绝大多数镜头来说，光圈都是可以调节的。标注最大光圈，但是您能够往小了缩。</p>
+<p>光圈一般都以光圈值表示。表示的方法大概有3种。举个例子，比如我们常说的2.0的光圈。可以表示为F2（F2.0），也可以表示为f&#x2F;2（f&#x2F;2.0），还可以表示为1：2。说的都是一个意思。</p>
+<p>有一点需要注意，光圈值越大，光圈越小。而光圈值越小，光圈越大。所以从数值上来说，2比8小，但是F2的光圈那是比F8的要大的。</p>
+<p>所以镜头上的最大光圈表示了您的镜头中的光圈最大能开多大。光圈原本就是镜头里一个可以调节大小的孔，这个孔越大，自然通过光线的能力就越强。早年教程里说大光圈更加明亮，其实没啥错。</p>
+<p>除了通光能力更强，同规格镜头光圈更大，虚化能力也就越强。</p>
 
                 
               </div>
@@ -310,7 +324,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Linux/" class="category-chain-item">Linux</a>
+  <a href="/categories/%E5%BD%B1%E5%83%8F%E6%8A%80%E6%9C%AF/" class="category-chain-item">影像技术</a>
   
   
 
@@ -325,7 +339,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Linux-%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/" class="print-no-link">#Linux 构建工具</a>
+        <a href="/tags/Camera/" class="print-no-link">#Camera</a>
       
     </div>
   
@@ -337,8 +351,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>CMake</div>
-      <div>http://example.com/2024/09/04/CMake/</div>
+      <div>手机影像基础</div>
+      <div>http://example.com/2024/09/21/手机影像基础/</div>
     </div>
     <div class="license-meta">
       
@@ -350,7 +364,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年9月4日</div>
+          <div>2024年9月21日</div>
         </div>
       
       
@@ -382,18 +396,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/09/21/%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80/" title="图像基础">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">图像基础</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/09/04/Makefile/" title="Makefile">
-                        <span class="hidden-mobile">Makefile</span>
+                      <a href="/2024/09/21/%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80/" title="图像基础">
+                        <span class="hidden-mobile">图像基础</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

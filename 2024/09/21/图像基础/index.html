@@ -19,22 +19,25 @@
   <meta name="author" content="Hang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="CMakeCMake 是一个跨平台的构建系统生成器，它可以生成各种构建工具所需的文件，如 Makefile、Ninja、Visual Studio 解决方案等。CMake 使用 CMakeLists.txt 文件来描述项目的构建规则。 项目结构如下 1234567&#x2F;path&#x2F;to&#x2F;your&#x2F;project&#x2F;├── CMakeLists.txt├── build   &#x2F;&#x2F;在此目录下运行cmake .">
+    <meta name="description" content="图像基础颜色模式灰度模式：图片每一个像素是由1个字节数值表示，也就是说每一像素是由8位0-1代码构成。 RGB模式：即red blue green三原色简写。图片每一个像素由3个字节数值表示，也就是说每一像素是由24位0-1代码构成。 CMYK模式：（其实就是印刷模式）即青色（c）洋红（m）黄色（y）黑色（k）4个通道 构成。图片每一个像素是由4个字节数值表示，也就是说每一像素是由8位二进制代码构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CMake">
-<meta property="og:url" content="http://example.com/2024/09/04/CMake/index.html">
+<meta property="og:title" content="图像基础">
+<meta property="og:url" content="http://example.com/2024/09/21/%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="CMakeCMake 是一个跨平台的构建系统生成器，它可以生成各种构建工具所需的文件，如 Makefile、Ninja、Visual Studio 解决方案等。CMake 使用 CMakeLists.txt 文件来描述项目的构建规则。 项目结构如下 1234567&#x2F;path&#x2F;to&#x2F;your&#x2F;project&#x2F;├── CMakeLists.txt├── build   &#x2F;&#x2F;在此目录下运行cmake .">
+<meta property="og:description" content="图像基础颜色模式灰度模式：图片每一个像素是由1个字节数值表示，也就是说每一像素是由8位0-1代码构成。 RGB模式：即red blue green三原色简写。图片每一个像素由3个字节数值表示，也就是说每一像素是由24位0-1代码构成。 CMYK模式：（其实就是印刷模式）即青色（c）洋红（m）黄色（y）黑色（k）4个通道 构成。图片每一个像素是由4个字节数值表示，也就是说每一像素是由8位二进制代码构">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-09-04T03:52:18.000Z">
-<meta property="article:modified_time" content="2024-09-04T04:09:50.760Z">
+<meta property="og:image" content="d:\hexo\hexo-hang-blog\blog\source\img\jpg202409211.png">
+<meta property="og:image" content="d:\hexo\hexo-hang-blog\blog\source\img\jpg20240921.png">
+<meta property="article:published_time" content="2024-09-21T09:07:44.000Z">
+<meta property="article:modified_time" content="2024-09-21T09:59:28.257Z">
 <meta property="article:author" content="Hang">
-<meta property="article:tag" content="Linux 构建工具">
+<meta property="article:tag" content="Camera">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="d:\hexo\hexo-hang-blog\blog\source\img\jpg202409211.png">
   
   
   
-  <title>CMake - Hexo</title>
+  <title>图像基础 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -200,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="CMake"></span>
+            <span id="subtitle" data-typed-text="图像基础"></span>
           
         </div>
 
@@ -211,8 +214,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-09-04 11:52" pubdate>
-          2024年9月4日 中午
+        <time datetime="2024-09-21 17:07" pubdate>
+          2024年9月21日 下午
         </time>
       </span>
     
@@ -223,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          159 字
+          614 字
         
       </span>
     
@@ -234,7 +237,7 @@
         
         
         
-          2 分钟
+          6 分钟
         
       </span>
     
@@ -271,27 +274,26 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">CMake</h1>
+            <h1 id="seo-header">图像基础</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="CMake"><a href="#CMake" class="headerlink" title="CMake"></a>CMake</h1><p><strong>CMake</strong> 是一个跨平台的构建系统生成器，它可以生成各种构建工具所需的文件，如 Makefile、Ninja、Visual Studio 解决方案等。CMake 使用 <code>CMakeLists.txt</code> 文件来描述项目的构建规则。</p>
-<p>项目结构如下</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs stylus">/path/to/your/project/<br>├── CMakeLists<span class="hljs-selector-class">.txt</span><br>├── build   <span class="hljs-comment">//在此目录下运行cmake ..生成构建文件</span><br>├── <span class="hljs-selector-tag">main</span><span class="hljs-selector-class">.h</span><br>├── <span class="hljs-selector-tag">main</span><span class="hljs-selector-class">.c</span><br>├── hello<span class="hljs-selector-class">.c</span><br>└── world.c<br></code></pre></td></tr></table></figure>
-
-<p>CMakeLists.txt的内容如下</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">cmake_minimum_required</span><span class="hljs-params">(VERSION <span class="hljs-number">3.5</span>)</span></span>  <span class="hljs-comment">//指定最低版本要求</span><br><br><span class="hljs-function"><span class="hljs-title">project</span><span class="hljs-params">(main)</span></span>  <span class="hljs-comment">//定义项目名称</span><br><br><span class="hljs-function"><span class="hljs-title">add_executable</span><span class="hljs-params">(main main.c hello.c world.c)</span></span> <span class="hljs-comment">//创建可执行文件并指定源文件</span><br></code></pre></td></tr></table></figure>
-
-<p>构建过程</p>
-<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli"><span class="hljs-string">//</span>运行cmake生成build文件<br>mkdir  build<br><span class="hljs-keyword">cd</span> build<br>cmake  . .<br><br><span class="hljs-string">//</span>编译项目<br>make<br><br>运行可执行文件<br><span class="hljs-string">./main</span><br></code></pre></td></tr></table></figure>
-
-
-
-
-
-
-
+                <h1 id="图像基础"><a href="#图像基础" class="headerlink" title="图像基础"></a>图像基础</h1><h2 id="颜色模式"><a href="#颜色模式" class="headerlink" title="颜色模式"></a>颜色模式</h2><p>灰度模式：图片每一个像素是由1个字节数值表示，也就是说每一像素是由8位0-1代码构成。</p>
+<p>RGB模式：即red blue green三原色简写。图片每一个像素由3个字节数值表示，也就是说每一像素是由24位0-1代码构成。</p>
+<p>CMYK模式：（其实就是印刷模式）即青色（c）洋红（m）黄色（y）黑色（k）4个通道 构成。图片每一个像素是由4个字节数值表示，也就是说每一像素是由8位二进制代码构成。</p>
+<p>HSB模式：即色调、饱和度和亮度模式，是一种直观易懂的颜色表示方式。它将颜色分解为色调、饱和度和亮度三个维度。</p>
+<p>Lab模式将颜色分解为亮度（L）和两个色度通道（a和b），其中a通道表示从红色到绿色的范围，b通道表示从黄色到蓝色的范围。</p>
+<p>位图模式：用黑和白两种颜色来表示图像中的像素，图像尺寸小，便于处理和操作。</p>
+<p>索引颜色模式：网上和动画中常用的图像模式，图像最多包含256种颜色。</p>
+<p>双色调模式：采用2-4种彩色油墨来创建图像，常用于减少印刷成本并表现丰富的颜色层次。</p>
+<p>多通道模式：把含有通道的图像分割成单个的通道，常用于特定的打印和输出需求。</p>
+<h2 id="图像大小"><a href="#图像大小" class="headerlink" title="图像大小"></a>图像大小</h2><p>每个照片无限放大之后都会看到一个一个最小【方格】，这里的方格就是一个一个的具体的【单个像素点】，而一个像素点<strong>只能有一种颜色</strong>，这个颜色由几位来构成，就是图像的【位深度】</p>
+<p>图像占用内存空间的大小：<code>分辨率 * 位深 ／ 8</code><br>分辨率：宽 * 高<br>位深度：指定图像中的每个像素可以使用的颜色信息数量。(属性页面可以看到位深度)<br>每个像素使用的信息位数越多，可用的颜色就越多，颜色表现就更逼真</p>
+<p>一幅RGB 888格式图像分辨率：1024*768,24位，则其大小计算如下：<br>size &#x3D; 1024 * 768 * 24 &#x2F; 8 &#x3D; 2359296 byte &#x3D; 2304 KB</p>
+<p><img src="D:\hexo\hexo-hang-blog\blog\source\img\jpg202409211.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="D:\hexo\hexo-hang-blog\blog\source\img\jpg20240921.png" srcset="/img/loading.gif" lazyload></p>
+<p>分辨率DPI（Dots Per Inch，每英寸点数），DPI越高，图像或文字的打印质量就越好，细节更加清晰。</p>
 
                 
               </div>
@@ -310,7 +312,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Linux/" class="category-chain-item">Linux</a>
+  <a href="/categories/%E5%BD%B1%E5%83%8F%E6%8A%80%E6%9C%AF/" class="category-chain-item">影像技术</a>
   
   
 
@@ -325,7 +327,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Linux-%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/" class="print-no-link">#Linux 构建工具</a>
+        <a href="/tags/Camera/" class="print-no-link">#Camera</a>
       
     </div>
   
@@ -337,8 +339,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>CMake</div>
-      <div>http://example.com/2024/09/04/CMake/</div>
+      <div>图像基础</div>
+      <div>http://example.com/2024/09/21/图像基础/</div>
     </div>
     <div class="license-meta">
       
@@ -350,7 +352,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年9月4日</div>
+          <div>2024年9月21日</div>
         </div>
       
       
@@ -382,9 +384,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/09/21/%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80/" title="图像基础">
+                      <a href="/2024/09/21/%E6%89%8B%E6%9C%BA%E5%BD%B1%E5%83%8F%E5%9F%BA%E7%A1%80/" title="手机影像基础">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">图像基础</span>
+                        <span class="hidden-mobile">手机影像基础</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -392,8 +394,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/09/04/Makefile/" title="Makefile">
-                        <span class="hidden-mobile">Makefile</span>
+                      <a href="/2024/09/04/CMake/" title="CMake">
+                        <span class="hidden-mobile">CMake</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
